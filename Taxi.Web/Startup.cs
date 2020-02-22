@@ -52,6 +52,7 @@ namespace Taxi.Web
                 cfg.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
             services.AddScoped<IUserHelper, UserHelper>();
+            services.AddScoped<IConverterHelper, ConverterHelper>();
 
             services.AddTransient<SeedDb>();
 
